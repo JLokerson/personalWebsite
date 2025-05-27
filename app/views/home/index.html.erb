@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="globals.css" />
+        <link rel="stylesheet" href="styleguide.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="home-page">
+            <div class="div">
+                <div class="section"></div>
+                <div class="frame">
+                    <%= image_tag "headshot1-1.png", alt: "Headshot" %>
+                    <p class="text-wrapper">
+                        Hi, I’m Julia. I’m pursuing my Bachelor’s degree in Computer Science at Clemson University and looking for
+                        internship opportunities to further develop my skills. I have experience with Python, Java, C++, C#,
+                        JavaScript, Ruby, HTML, and working with tools like Git, MySQL, and Linux.
+                    </p>
+                </div>
+                <div class="group">
+                    <div class="frame-2">
+                        <%= link_to root_path, class: "button" do %>
+                            <div class="text-wrapper-2">Home</div>
+                        <% end %>
+                        <%= link_to about_path, class: "text-wrapper-3" do %>
+                            About Me
+                        <% end %>
+                        <%= link_to projects_path, class: "text-wrapper-3" do %>
+                            Projects
+                        <% end %>
+                        <%= link_to contact_path, class: "text-wrapper-3" do %>
+                            Contact
+                        <% end %>
+                    </div>
+                    <div class="julia-lokerson">Julia Lokerson <br />Clemson University</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

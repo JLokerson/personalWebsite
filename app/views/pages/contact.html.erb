@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <%= stylesheet_link_tag "globals" %>
+        <%= stylesheet_link_tag "styleguide" %>
+        <%= stylesheet_link_tag "style" %>
+    </head>
+    <body>
+        <div class="contact">
+            <div class="div">
+                <div class="text-wrapper">Links</div>
+                
+            <!-- Resume download link -->
+            <%= link_to "/downloads/julia_lokerson_resume.pdf", download: "Julia_Lokerson_Resume.pdf" do %>
+                <div class="group">
+                    <div class="overlap-group">
+                        <div class="text-wrapper-2">Resume</div>
+                        <%= image_tag "image 6.png", class: "image" %>
+                    </div>
+                </div>
+            <% end %>
+
+                <!-- GitHub link -->
+                <%= link_to "https://github.com/JLokerson", target: "_blank" do %>
+                    <div class="group-2">
+                        <div class="text-wrapper-3">GitHub</div>
+                        <%= image_tag "image 5.png", class: "img" %>
+                    </div>
+                <% end %>
+                
+                <!-- LinkedIn link -->
+                <%= link_to "https://www.linkedin.com/in/julia-lokerson-745a682bb/", target: "_blank" do %>
+                    <div class="group-3">
+                        <div class="text-wrapper-4">LinkedIn</div>
+                        <%= image_tag "image 4.png", class: "image-2" %>
+                    </div>
+                <% end %>
+                
+                <div class="overlap">
+                    <div class="julia-lokerson">Julia Lokerson <br />Clemson University</div>
+                    <div class="julia-lokerson">Julia Lokerson <br />Clemson University</div>
+                </div>
+                <%= link_to root_path, class: "button" do %>
+                    <div class="text-wrapper-5">Home</div>
+                <% end %>
+                <%= link_to about_path, class: "text-wrapper-6" do %>
+                    About Me
+                <% end %>
+                <%= link_to projects_path, class: "text-wrapper-7" do %>
+                    Projects
+                <% end %>
+                <%= link_to contact_path, class: "text-wrapper-8" do %>
+                    Contact
+                <% end %>
+                <div class="section"></div>
+            </div>
+        </div>
+    </body>
+</html>

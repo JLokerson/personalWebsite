@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <%= stylesheet_link_tag "globals" %>
+        <%= stylesheet_link_tag "styleguide" %>
+        <%= stylesheet_link_tag "style" %>
+    </head>
+    <body>
+        <div class="about">
+            <div class="div">
+                <div class="copy">
+                    <div class="text-wrapper">About Me</div>
+                    <p class="paragraph">
+                        My name is Julia Lokerson, and I am a Computer Science student at Clemson University, working toward both my
+                        Bachelor's and Master's degrees through an accelerated program. I have a strong academic foundation in
+                        algorithms, data structures, and full-stack development, and I've applied these skills through coursework
+                        and practical projects. My work includes developing cipher decoding tools in Python, creating a mock
+                        e-commerce website using HTML and Ruby, and programming games such as Tic Tac Toe, Checkers, and 2D
+                        platformers using Java and Pygame. I'm also a member of Upsilon Pi Epsilon, the international computer
+                        science honor society, and the Clemson chapter of the ACM. My technical experience spans languages like
+                        Python, JavaScript, C++, and C#, with additional skills in Unity, Maya, and digital illustration through my
+                        Digital Production Arts minor. I'm passionate about using programming to solve real-world problems and to
+                        build engaging, interactive experiences.
+                    </p>
+                </div>
+                <div class="overlap">
+                    <div class="julia-lokerson">Julia Lokerson <br />Clemson University</div>
+                    <div class="julia-lokerson">Julia Lokerson <br />Clemson University</div>
+                </div>
+                <div class="copy-2">
+                    <div class="text-wrapper-2">Education</div>
+                    <p class="p">
+                        At Clemson University, I am pursuing a Bachelor of Science in Computer Science with a minor in Digital
+                        Production Arts, and I am on track to complete an accelerated Master of Science in Computer Science by the
+                        end of 2026. My coursework has provided a solid foundation in core areas such as data structures,
+                        algorithms, and web development, while also allowing me to explore specialized topics through hands-on
+                        projects. I've developed Python programs for word cipher analysis, built a functional e-commerce website
+                        using HTML and Ruby, and created games using Java and Pygame—all of which have strengthened my
+                        problem-solving and software design skills. I've been recognized on the Dean's List multiple times and am a
+                        member of both the Association for Computing Machinery (ACM) and Upsilon Pi Epsilon, the international honor
+                        society for computing. My time at Clemson has given me not only the technical skills but also the practical
+                        experience needed to succeed in complex and collaborative development environments.
+                    </p>
+                </div>
+                <%= image_tag "headshot1-1.png", class: "headshot" %>
+                <%= image_tag "image 7.png", class: "image" %>
+                <%= image_tag "image 8.png", class: "img" %>
+                <div class="overlap-group">
+                    <div class="group">
+                        <%= image_tag "image 9.png", class: "image-2" %>
+                        <div class="overlap-2">
+                            <%= image_tag "image 10.png", class: "image-3" %>
+                            <div class="overlap-3">
+                                <div class="overlap-group-2">
+                                    <%= image_tag "image 12.png", class: "image-4" %>
+                                    <%= image_tag "image 13.png", class: "image-5" %>
+                                    <%= image_tag "image 16.png", class: "image-6" %>
+                                </div>
+                                <%= image_tag "image 14.png", class: "image-7" %>
+                                <%= image_tag "image 18.png", class: "image-8" %>
+                            </div>
+                        </div>
+                        <%= image_tag "image 15.png", class: "image-9" %>
+                        <%= image_tag "image 17.png", class: "image-10" %>
+                    </div>
+                    <%= image_tag "image 19.png", class: "image-11" %>
+                </div>
+                <div class="copy-3">
+                    <div class="text-wrapper">Skills</div>
+                    <p class="paragraph-2">
+                        I have experience with a range of programming languages and development tools, including Python, JavaScript,
+                        C, C++, C#, Ruby, HTML, and Java. I'm also familiar with version control using Git, database management with
+                        MySQL, and working in Linux environments such as Ubuntu. This diverse skill set has allowed me to build
+                        everything from web applications to game projects and command-line tools, giving me a solid foundation for
+                        both front-end and back-end development.
+                    </p>
+                </div>
+                <div class="section"></div>
+                <div class="group-2">
+                    <%= link_to root_path, class: "button" do %>
+                        <div class="text-wrapper-3">Home</div>
+                    <% end %>
+                    <%= link_to about_path, class: "text-wrapper-4" do %>
+                        About Me
+                    <% end %>
+                    <%= link_to projects_path, class: "text-wrapper-5" do %>
+                        Projects
+                    <% end %>
+                    <%= link_to contact_path, class: "text-wrapper-6" do %>
+                        Contact
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
